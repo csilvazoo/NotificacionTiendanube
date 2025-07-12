@@ -1,0 +1,82 @@
+==========================================================
+INSTRUCTIVO PARA EL MONITOR DE DRAGONFISH - TIENDANUBE
+==========================================================
+Fecha: 11/07/2025
+Versión: 1.0
+
+DESCRIPCIÓN:
+Este conjunto de scripts permite monitorear si la aplicación "Dragonfish - Tiendanube" 
+está en ejecución y envía notificaciones cuando no lo está. 
+
+CONTENIDO DEL PAQUETE:
+- VerificarDragonfish.ps1: Script para verificar una sola vez si la aplicación está en ejecución.
+- MonitorDragonfish.ps1: Script para monitorear continuamente la aplicación.
+- ConfigurarDragonfish.ps1: Menú de configuración para todas las opciones.
+- InstalarMonitor.ps1: Script para instalar el monitor como tarea programada.
+- ConfigDragonfish.json: Archivo de configuración que almacena los ajustes.
+
+REQUISITOS:
+- Windows 10 o superior.
+- PowerShell 5.1 o superior.
+- Permisos de administrador (para la instalación).
+
+INSTALACIÓN:
+1. Descomprima todos los archivos en una carpeta fija, por ejemplo: 
+   C:\MonitorDragonfish\
+
+2. Para instalar el monitor como una tarea programada (inicio automático):
+   a) Haga clic derecho en "InstalarMonitor.ps1"
+   b) Seleccione "Ejecutar con PowerShell"
+   c) Confirme los permisos de administrador cuando se le solicite
+   d) Siga las instrucciones en pantalla
+
+OPCIONES DE CONFIGURACIÓN:
+Para personalizar la configuración, ejecute el script "ConfigurarDragonfish.ps1":
+1. Haga clic derecho en "ConfigurarDragonfish.ps1"
+2. Seleccione "Ejecutar con PowerShell"
+3. Use el menú interactivo para:
+   - Cambiar la ruta del ejecutable
+   - Modificar el intervalo de verificación
+   - Realizar pruebas de verificación
+   - Ver la configuración actual
+
+USO MANUAL:
+Si prefiere ejecutar el monitor manualmente:
+1. Haga clic derecho en "MonitorDragonfish.ps1"
+2. Seleccione "Ejecutar con PowerShell"
+3. El monitor se ejecutará en una ventana de PowerShell
+4. Para cerrar el monitor, cierre la ventana de PowerShell
+
+VERIFICACIÓN ÚNICA:
+Para comprobar una sola vez si la aplicación está en ejecución:
+1. Haga clic derecho en "VerificarDragonfish.ps1"
+2. Seleccione "Ejecutar con PowerShell"
+3. Verá un mensaje indicando si la aplicación está en ejecución
+
+NOTIFICACIONES:
+- Cuando la aplicación no está en ejecución, aparecerá una notificación en la barra de tareas.
+- Las notificaciones se mostrarán cada vez que se verifica y la aplicación no está en ejecución.
+
+SOLUCIÓN DE PROBLEMAS:
+1. "No se reconoce el comando PowerShell"
+   - Asegúrese de tener PowerShell 5.1 o superior instalado
+   - Ejecute "powershell -version" para verificar
+
+2. "La política de ejecución no permite ejecutar scripts"
+   - Ejecute PowerShell como administrador
+   - Ejecute el comando: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+   - Confirme los cambios
+
+3. "No aparecen notificaciones"
+   - Verifique la configuración de notificaciones de Windows
+   - Asegúrese de que las notificaciones estén habilitadas para PowerShell
+
+4. "La ruta de la aplicación es incorrecta"
+   - Ejecute "ConfigurarDragonfish.ps1" y seleccione la opción para cambiar la ruta
+
+CONTACTO Y SOPORTE:
+Para asistencia técnica, contacte a soporte@empresa.com o llame al (123) 456-7890.
+
+==========================================================
+FIN DEL INSTRUCTIVO
+==========================================================
