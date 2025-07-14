@@ -32,13 +32,13 @@ else {
 function Show-Menu {
     Clear-Host
     Write-Host "=============================================" -ForegroundColor Green
-    Write-Host "  MONITOR DRAGONFISH - MENU PRINCIPAL" -ForegroundColor Green
+    Write-Host "  MONITOR DRAGONFISH -TIENDANUBE - MENU PRINCIPAL" -ForegroundColor Green
     Write-Host "=============================================" -ForegroundColor Green
     Write-Host ""
     Write-Host "1. Verificar estado actual" -ForegroundColor Cyan
     Write-Host "2. Iniciar monitoreo continuo" -ForegroundColor Cyan
-    Write-Host "3. Iniciar Dragonfish" -ForegroundColor Cyan
-    Write-Host "4. Detener Dragonfish" -ForegroundColor Cyan
+    Write-Host "3. Iniciar Dragonfish - Tiendanube" -ForegroundColor Cyan
+    Write-Host "4. Detener Dragonfish - Tiendanube" -ForegroundColor Cyan
     Write-Host "5. Configurar rutas" -ForegroundColor Yellow
     Write-Host "0. Salir" -ForegroundColor Red
     Write-Host ""

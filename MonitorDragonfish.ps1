@@ -66,7 +66,7 @@ if (-not $modoOculto) {
 }
 
 # Mostrar notificación de inicio
-Show-Notification -Title "Monitor Dragonfish" -Message "Monitor iniciado. Vigilando el proceso '$nombreProceso'" -Icon "Info"
+Show-Notification -Title "Monitor Dragonfish - Tiendanube" -Message "Monitor iniciado. Vigilando el proceso '$nombreProceso'" -Icon "Info"
 
 $contador = 0
 $estadoAnterior = $null
@@ -91,7 +91,7 @@ try {
                 
                 # Solo notificar si cambio de estado (no estaba ejecutandose antes)
                 if ($estadoAnterior -eq $false) {
-                    Show-Notification -Title "Dragonfish Monitor" -Message "Aplicacion INICIADA correctamente" -Icon "Info"
+                    Show-Notification -Title "Monitor Dragonfish - Tiendanube" -Message "Aplicacion INICIADA correctamente" -Icon "Info"
                 }
             }
             else {
@@ -105,7 +105,7 @@ try {
             $estadoAnterior = $true
         }
         else {
-            $mensaje = "La aplicacion '$nombreProceso' NO esta ejecutandose."
+            $mensaje = "ALERTA: La aplicacion '$nombreProceso' NO esta ejecutandose."
             
             # Mostrar mensaje en consola solo si hay cambio de estado o cada 10 verificaciones
             if ($estadoAnterior -eq $true -or $estadoAnterior -eq $null -or $contador % 10 -eq 0) {

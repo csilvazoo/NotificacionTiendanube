@@ -65,7 +65,7 @@ if ($proceso) {
     Show-Notification -Title "Dragonfish - Tiendanube" -Message "Aplicacion en ejecucion (PID: $($proceso.Id))" -Icon "Info"
 } 
 else {
-    $mensaje = "La aplicacion '$nombreProceso' NO esta ejecutandose."
+    $mensaje = "ALERTA: La aplicacion '$nombreProceso' NO esta ejecutandose."
     Write-Host "[$timestamp] $mensaje" -ForegroundColor Red
     
     # Verificar si el ejecutable existe
@@ -79,7 +79,7 @@ else {
     }
     
     # Mostrar notificacion
-    Show-Notification -Title "Dragonfish - Tiendanube" -Message "Aplicacion NO esta en ejecucion" -Icon "Warning"
+    Show-Notification -Title "ALERTA: Dragonfish - Tiendanube" -Message "Aplicacion NO esta en ejecucion" -Icon "Warning"
 }
 
 Write-Host "Verificacion completada." -ForegroundColor Gray
